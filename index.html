@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eduardo Carvalho | Portfólio</title>
   <meta name="description" content="Portfólio pessoal de Eduardo Carvalho, estudante de Sistemas de Informação na ESAMC." />
-  <meta name="theme-color" content="#05070d" />
+  <meta name="theme-color" content="#121212" />
 
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <!-- Ícones das linguagens -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
@@ -22,28 +22,16 @@
 </head>
 <body>
 
-  <!-- Tela de carregamento estilo terminal -->
-  <div id="loader" aria-hidden="true">
-    <div class="loader-terminal">
-      <p><span class="prompt">$</span> <span id="loader-text"></span><span class="caret">_</span></p>
-      <div class="loader-bar"><span></span></div>
-    </div>
-  </div>
-
-  <!-- Fundo animado -->
-  <canvas id="particles" aria-hidden="true"></canvas>
-  <div class="grid-bg" aria-hidden="true"></div>
-
   <!-- Navegação -->
   <header class="nav">
-    <a href="#inicio" class="nav-logo">&lt;EC /&gt;</a>
+    <a href="#inicio" class="nav-logo">Eduardo Carvalho</a>
     <nav>
       <ul class="nav-links">
-        <li><a href="#sobre"><span>01.</span> sobre</a></li>
-        <li><a href="#resumo"><span>02.</span> resumo</a></li>
-        <li><a href="#trajetoria"><span>03.</span> trajetória</a></li>
-        <li><a href="#skills"><span>04.</span> skills</a></li>
-        <li><a href="#contato" class="nav-cta">contato</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#resumo">Resumo</a></li>
+        <li><a href="#trajetoria">Trajetória</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
     <button class="nav-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
@@ -53,22 +41,19 @@
 
     <!-- HERO -->
     <section id="inicio" class="hero">
-      <p class="hero-cmd mono">~/portfolio $ <span class="accent" id="typed"></span><span class="caret">|</span></p>
-      <h1 class="hero-name glitch" data-text="Eduardo Carvalho">Eduardo Carvalho</h1>
-      <h2 class="hero-role">Estudante de <span class="gradient-text">Sistemas de Informação</span> na ESAMC</h2>
+      <h1 class="hero-name">Eduardo Carvalho</h1>
+      <h2 class="hero-role">Estudante de Sistemas de Informação na ESAMC</h2>
       <p class="hero-desc">Construindo meu caminho na tecnologia com curiosidade, prática e vontade de aprender.</p>
 
       <div class="hero-actions">
         <a href="#sobre" class="btn btn-primary">Conheça mais</a>
         <a href="#contato" class="btn btn-ghost">Vamos conversar</a>
       </div>
-
-      <a href="#sobre" class="scroll-indicator" aria-label="Rolar para baixo"><span></span></a>
     </section>
 
-    <!-- 01 SOBRE -->
+    <!-- SOBRE -->
     <section id="sobre" class="section">
-      <div class="section-label mono reveal"><span class="accent">01</span> / sobre</div>
+      <div class="section-label reveal">Sobre</div>
       <div class="section-body">
         <p class="about-text reveal">
           Estudo <strong>Sistemas de Informação na ESAMC</strong>. Tenho conhecimento em
@@ -78,33 +63,33 @@
       </div>
     </section>
 
-    <!-- 02 RESUMO -->
+    <!-- RESUMO -->
     <section id="resumo" class="section">
-      <div class="section-label mono reveal"><span class="accent">02</span> / resumo</div>
+      <div class="section-label reveal">Resumo</div>
       <div class="section-body cards-grid">
-        <article class="card tilt reveal">
-          <span class="card-tag mono">formação</span>
+        <article class="card reveal">
+          <span class="card-tag">Formação</span>
           <h3>Sistemas de Informação</h3>
         </article>
-        <article class="card tilt reveal">
-          <span class="card-tag mono">experiência</span>
+        <article class="card reveal">
+          <span class="card-tag">Experiência</span>
           <h3>Técnico de sobressalentes</h3>
         </article>
-        <article class="card tilt reveal">
-          <span class="card-tag mono">inglês</span>
+        <article class="card reveal">
+          <span class="card-tag">Inglês</span>
           <h3>Nível avançado</h3>
         </article>
       </div>
     </section>
 
-    <!-- 03 TRAJETÓRIA -->
+    <!-- TRAJETÓRIA -->
     <section id="trajetoria" class="section">
-      <div class="section-label mono reveal"><span class="accent">03</span> / trajetória</div>
+      <div class="section-label reveal">Trajetória</div>
       <div class="section-body timeline">
         <article class="timeline-item reveal">
           <div class="timeline-head">
             <h3>Formação em tecnologia</h3>
-            <span class="badge mono">em andamento</span>
+            <span class="badge">Em andamento</span>
           </div>
           <p class="timeline-org">Sistemas de Informação — ESAMC</p>
           <p>Tenho conhecimento em HTML, CSS, JavaScript, C e Python.</p>
@@ -112,7 +97,7 @@
         <article class="timeline-item reveal">
           <div class="timeline-head">
             <h3>Técnico de sobressalentes</h3>
-            <span class="badge mono">atuação atual</span>
+            <span class="badge">Atuação atual</span>
           </div>
           <p class="timeline-org">MGEA Engenharia Industrial</p>
           <p>Trabalho como técnico de sobressalentes na MGEA Engenharia Industrial, com organização e atenção aos detalhes.</p>
@@ -120,51 +105,43 @@
       </div>
     </section>
 
-    <!-- 04 SKILLS -->
+    <!-- SKILLS -->
     <section id="skills" class="section">
-      <div class="section-label mono reveal"><span class="accent">04</span> / skills</div>
+      <div class="section-label reveal">Skills</div>
       <div class="section-body">
-        <div class="code-window reveal">
-          <div class="code-bar">
-            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-            <span class="code-file mono">conhecimentos.js</span>
-          </div>
-          <pre class="code mono"><code><span class="kw">const</span> conhecimentos = {
-  skills:  [<span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JavaScript"</span>, <span class="str">"C"</span>, <span class="str">"Python"</span>],
-  idiomas: { ingles: <span class="str">"avançado"</span> },
-};</code></pre>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill tilt reveal" style="--c:#e34f26"><i class="devicon-html5-plain"></i><span>HTML</span></div>
-          <div class="skill tilt reveal" style="--c:#2965f1"><i class="devicon-css3-plain"></i><span>CSS</span></div>
-          <div class="skill tilt reveal" style="--c:#f7df1e"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
-          <div class="skill tilt reveal" style="--c:#5c8dbc"><i class="devicon-c-plain"></i><span>C</span></div>
-          <div class="skill tilt reveal" style="--c:#3776ab"><i class="devicon-python-plain"></i><span>Python</span></div>
-        </div>
+        <ul class="skills-list reveal">
+          <li><i class="devicon-html5-plain"></i>HTML</li>
+          <li><i class="devicon-css3-plain"></i>CSS</li>
+          <li><i class="devicon-javascript-plain"></i>JavaScript</li>
+          <li><i class="devicon-c-plain"></i>C</li>
+          <li><i class="devicon-python-plain"></i>Python</li>
+        </ul>
+        <p class="skills-note reveal">Idiomas: inglês avançado.</p>
       </div>
     </section>
 
     <!-- CONTATO -->
-    <section id="contato" class="section contact">
-      <div class="contact-box reveal">
-        <p class="mono accent">// próximo passo</p>
+    <section id="contato" class="section">
+      <div class="section-label reveal">Contato</div>
+      <div class="section-body contact reveal">
         <h2>Vamos conversar?</h2>
         <p>Estou aberto a oportunidades, trocas de conhecimento e novos desafios.</p>
-        <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/eduardo-carvalho-pinto-5109a9374/" target="_blank" rel="noopener">
-          <i class="devicon-linkedin-plain"></i> Falar no LinkedIn →
-        </a>
-        <a class="btn btn-ghost btn-lg" href="https://github.com/educrvp" target="_blank" rel="noopener">
-          <i class="devicon-github-original"></i> Ver GitHub
-        </a>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/eduardo-carvalho-pinto-5109a9374/" target="_blank" rel="noopener">
+            <i class="devicon-linkedin-plain"></i> Falar no LinkedIn
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/educrvp" target="_blank" rel="noopener">
+            <i class="devicon-github-original"></i> Ver GitHub
+          </a>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer mono">
+  <footer class="footer">
     <span>© <span id="year"></span> Eduardo Carvalho</span>
-    <span>portfólio pessoal</span>
+    <span>Portfólio pessoal</span>
   </footer>
 
   <script src="js/main.js"></script>
