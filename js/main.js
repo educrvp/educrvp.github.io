@@ -6,21 +6,54 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
 /* ---------- Navegação ---------- */
-const nav = document.querySelector(".nav");
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
-
-window.addEventListener(
-  "scroll",
-  () => nav.classList.toggle("scrolled", window.scrollY > 20),
-  { passive: true }
-);
 
 navToggle.addEventListener("click", () => {
   const open = navLinks.classList.toggle("open");
   navToggle.classList.toggle("open", open);
   navToggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
 });
+
+/* ---------- Idioma (PT / EN) ---------- */
+const translatable = document.querySelectorAll("[data-en]");
+translatable.forEach((el) => (el.dataset.pt = el.innerHTML));
+
+const meta = {
+  pt: {
+    lang: "pt-BR",
+    title: "Eduardo Carvalho | Portfólio",
+    description: "Portfólio pessoal de Eduardo Carvalho, estudante de Sistemas de Informação na ESAMC.",
+  },
+  en: {
+    lang: "en",
+    title: "Eduardo Carvalho | Portfolio",
+    description: "Personal portfolio of Eduardo Carvalho, Information Systems student at ESAMC.",
+  },
+};
+
+function setLanguage(lang) {
+  translatable.forEach((el) => (el.innerHTML = el.dataset[lang]));
+  document.documentElement.lang = meta[lang].lang;
+  document.title = meta[lang].title;
+  document.querySelector('meta[name="description"]').content = meta[lang].description;
+  document.querySelectorAll(".lang button").forEach((b) =>
+    b.classList.toggle("active", b.dataset.lang === lang)
+  );
+  try {
+    localStorage.setItem("lang", lang);
+  } catch (e) {}
+}
+
+document.querySelectorAll(".lang button").forEach((b) =>
+  b.addEventListener("click", () => setLanguage(b.dataset.lang))
+);
+
+let savedLang = null;
+try {
+  savedLang = localStorage.getItem("lang");
+} catch (e) {}
+if (savedLang === "en") setLanguage("en");
 
 navLinks.querySelectorAll("a").forEach((link) =>
   link.addEventListener("click", () => {

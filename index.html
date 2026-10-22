@@ -5,15 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eduardo Carvalho | Portfólio</title>
   <meta name="description" content="Portfólio pessoal de Eduardo Carvalho, estudante de Sistemas de Informação na ESAMC." />
-  <meta name="theme-color" content="#121212" />
+  <meta name="theme-color" content="#0f0f10" />
 
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <!-- Ícones das linguagens -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
 
@@ -24,16 +21,19 @@
 
   <!-- Navegação -->
   <header class="nav">
-    <a href="#inicio" class="nav-logo">Eduardo Carvalho</a>
+    <a href="#inicio" class="nav-logo">educrvp<span>.</span></a>
     <nav>
       <ul class="nav-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#resumo">Resumo</a></li>
-        <li><a href="#trajetoria">Trajetória</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#inicio">Home</a></li>
+        <li><a href="#sobre" data-en="About me">Sobre mim</a></li>
+        <li><a href="#curriculo" data-en="Resume">Currículo</a></li>
+        <li><a href="#contato" data-en="Contact">Contato</a></li>
       </ul>
     </nav>
+    <div class="lang" role="group" aria-label="Idioma">
+      <button type="button" data-lang="pt" class="active">PT</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
     <button class="nav-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
   </header>
 
@@ -41,107 +41,138 @@
 
     <!-- HERO -->
     <section id="inicio" class="hero">
-      <h1 class="hero-name">Eduardo Carvalho</h1>
-      <h2 class="hero-role">Estudante de Sistemas de Informação na ESAMC</h2>
-      <p class="hero-desc">Construindo meu caminho na tecnologia com curiosidade, prática e vontade de aprender.</p>
+      <div class="hero-ring" aria-hidden="true"></div>
+
+      <p class="hero-kicker"><span class="dot"></span><span data-en="Welcome to my portfolio">Bem-vindo ao meu portfólio</span></p>
+      <h1 class="hero-name">Eduardo Carvalho<span class="caret" aria-hidden="true"></span></h1>
+      <p class="hero-role" data-en="Information Systems <span>/</span> ESAMC <span>/</span> Spare Parts Technician">
+        Sistemas de Informação <span>/</span> ESAMC <span>/</span> Técnico de sobressalentes
+      </p>
+      <p class="hero-desc" data-en="Building my path in technology with curiosity, practice and eagerness to learn.">Construindo meu caminho na tecnologia com curiosidade, prática e vontade de aprender.</p>
+
+      <ul class="chips">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>C</li>
+        <li>Python</li>
+      </ul>
 
       <div class="hero-actions">
-        <a href="#sobre" class="btn btn-primary">Conheça mais</a>
-        <a href="#contato" class="btn btn-ghost">Vamos conversar</a>
+        <a class="btn" href="https://github.com/educrvp" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+        <a class="btn" href="https://www.linkedin.com/in/eduardo-carvalho-pinto-5109a9374/" target="_blank" rel="noopener">LinkedIn <span class="arrow">↗</span></a>
       </div>
+
+      <a href="#sobre" class="hero-more"><span data-en="Explore more">Explore mais</span><span class="chevron" aria-hidden="true"></span></a>
     </section>
 
     <!-- SOBRE -->
     <section id="sobre" class="section">
-      <div class="section-label reveal">Sobre</div>
-      <div class="section-body">
-        <p class="about-text reveal">
-          Estudo <strong>Sistemas de Informação na ESAMC</strong>. Tenho conhecimento em
-          <strong>HTML, CSS, JavaScript, C e Python</strong> e também atuo como
-          <strong>técnico de sobressalentes na MGEA Engenharia Industrial</strong>.
-        </p>
+      <div class="container">
+        <h2 class="section-title reveal"><span class="num">01</span><span class="line"></span><span data-en="Who I am">Quem sou eu</span></h2>
+
+        <div class="about reveal">
+          <p data-en="I'm Eduardo, an <strong>Information Systems student at ESAMC</strong>. I have knowledge of <strong>HTML, CSS, JavaScript, C and Python</strong> and I also work as a <strong>spare parts technician at MGEA Engenharia Industrial</strong>.">
+            Sou o Eduardo, estudante de <strong>Sistemas de Informação na ESAMC</strong>. Tenho conhecimento em
+            <strong>HTML, CSS, JavaScript, C e Python</strong> e também atuo como
+            <strong>técnico de sobressalentes na MGEA Engenharia Industrial</strong>.
+          </p>
+          <p data-en="Building my path in technology with curiosity, practice and eagerness to learn.">Construindo meu caminho na tecnologia com curiosidade, prática e vontade de aprender.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <span class="card-num">01</span>
+            <h3 data-en="Education">Formação</h3>
+            <p data-en="Information Systems">Sistemas de Informação</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">02</span>
+            <h3 data-en="Experience">Experiência</h3>
+            <p data-en="Spare parts technician">Técnico de sobressalentes</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">03</span>
+            <h3 data-en="English">Inglês</h3>
+            <p data-en="Advanced level">Nível avançado</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- RESUMO -->
-    <section id="resumo" class="section">
-      <div class="section-label reveal">Resumo</div>
-      <div class="section-body cards-grid">
-        <article class="card reveal">
-          <span class="card-tag">Formação</span>
-          <h3>Sistemas de Informação</h3>
-        </article>
-        <article class="card reveal">
-          <span class="card-tag">Experiência</span>
-          <h3>Técnico de sobressalentes</h3>
-        </article>
-        <article class="card reveal">
-          <span class="card-tag">Inglês</span>
-          <h3>Nível avançado</h3>
-        </article>
-      </div>
-    </section>
+    <!-- CURRÍCULO -->
+    <section id="curriculo" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="num">02</span><span class="line"></span><span data-en="Resume">Currículo</span></h2>
 
-    <!-- TRAJETÓRIA -->
-    <section id="trajetoria" class="section">
-      <div class="section-label reveal">Trajetória</div>
-      <div class="section-body timeline">
-        <article class="timeline-item reveal">
-          <div class="timeline-head">
-            <h3>Formação em tecnologia</h3>
-            <span class="badge">Em andamento</span>
+        <div class="cv">
+          <div class="cv-col">
+            <h3 class="cv-title reveal" data-en="Experience">Experiências</h3>
+            <div class="timeline reveal">
+              <article class="tl-item current">
+                <div class="tl-tags">
+                  <span class="tag" data-en="Present">Atualmente</span>
+                  <span class="tag tag-accent" data-en="• Current">• Atual</span>
+                </div>
+                <h4 data-en="Spare Parts Technician">Técnico de sobressalentes</h4>
+                <p class="tl-org">MGEA Engenharia Industrial</p>
+                <p data-en="I work as a spare parts technician at MGEA Engenharia Industrial, with organization and attention to detail.">Trabalho como técnico de sobressalentes na MGEA Engenharia Industrial, com organização e atenção aos detalhes.</p>
+              </article>
+            </div>
+
+            <h3 class="cv-title reveal" data-en="Education">Formação</h3>
+            <article class="edu reveal">
+              <div class="edu-head">
+                <h4 data-en="Information Systems">Sistemas de Informação</h4>
+                <span class="tag tag-accent" data-en="In progress">Cursando</span>
+              </div>
+              <p class="edu-org">ESAMC</p>
+              <p data-en="Technology degree. I have knowledge of HTML, CSS, JavaScript, C and Python.">Formação em tecnologia. Tenho conhecimento em HTML, CSS, JavaScript, C e Python.</p>
+            </article>
+
+            <h3 class="cv-title reveal" data-en="Languages">Idiomas</h3>
+            <ul class="pills reveal">
+              <li data-en="English — Advanced">Inglês — Avançado</li>
+            </ul>
           </div>
-          <p class="timeline-org">Sistemas de Informação — ESAMC</p>
-          <p>Tenho conhecimento em HTML, CSS, JavaScript, C e Python.</p>
-        </article>
-        <article class="timeline-item reveal">
-          <div class="timeline-head">
-            <h3>Técnico de sobressalentes</h3>
-            <span class="badge">Atuação atual</span>
-          </div>
-          <p class="timeline-org">MGEA Engenharia Industrial</p>
-          <p>Trabalho como técnico de sobressalentes na MGEA Engenharia Industrial, com organização e atenção aos detalhes.</p>
-        </article>
-      </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <div class="section-label reveal">Skills</div>
-      <div class="section-body">
-        <ul class="skills-list reveal">
-          <li><i class="devicon-html5-plain"></i>HTML</li>
-          <li><i class="devicon-css3-plain"></i>CSS</li>
-          <li><i class="devicon-javascript-plain"></i>JavaScript</li>
-          <li><i class="devicon-c-plain"></i>C</li>
-          <li><i class="devicon-python-plain"></i>Python</li>
-        </ul>
-        <p class="skills-note reveal">Idiomas: inglês avançado.</p>
+          <div class="cv-col">
+            <h3 class="cv-title reveal">Hard Skills</h3>
+            <div class="skills reveal">
+              <div class="skill-row">
+                <span class="skill-label">Front-end</span>
+                <p>HTML, CSS, JavaScript</p>
+              </div>
+              <div class="skill-row">
+                <span class="skill-label" data-en="Languages">Linguagens</span>
+                <p>C, Python</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- CONTATO -->
-    <section id="contato" class="section">
-      <div class="section-label reveal">Contato</div>
-      <div class="section-body contact reveal">
-        <h2>Vamos conversar?</h2>
-        <p>Estou aberto a oportunidades, trocas de conhecimento e novos desafios.</p>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="https://www.linkedin.com/in/eduardo-carvalho-pinto-5109a9374/" target="_blank" rel="noopener">
-            <i class="devicon-linkedin-plain"></i> Falar no LinkedIn
-          </a>
-          <a class="btn btn-ghost" href="https://github.com/educrvp" target="_blank" rel="noopener">
-            <i class="devicon-github-original"></i> Ver GitHub
-          </a>
-        </div>
+    <section id="contato" class="section contact">
+      <div class="container reveal">
+        <h2 data-en="Let's talk">Vamos conversar?</h2>
+        <p data-en="I'm open to opportunities, knowledge sharing and new challenges.">Estou aberto a oportunidades, trocas de conhecimento e novos desafios.</p>
+        <a class="btn btn-light" href="https://www.linkedin.com/in/eduardo-carvalho-pinto-5109a9374/" target="_blank" rel="noopener"><span data-en="Get in touch">Entre em contato</span> <span class="arrow">↗</span></a>
       </div>
     </section>
 
   </main>
 
   <footer class="footer">
-    <span>© <span id="year"></span> Eduardo Carvalho</span>
-    <span>Portfólio pessoal</span>
+    <div class="container footer-inner">
+      <a href="#inicio" class="nav-logo">educrvp<span>.</span></a>
+      <div class="footer-links">
+        <a href="https://github.com/educrvp" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/eduardo-carvalho-pinto-5109a9374/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <span class="footer-copy">© <span id="year"></span> Eduardo Carvalho</span>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
